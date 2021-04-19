@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+}
+
+/* IMAGES */
+
+image {
+  margin-bottom: 2em;
+}
+
+/* CARD COLORS */
+
+.card-1 {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card-body,
+.btn {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card-title {
+  color: hsl(0, 0%, 95%);
+}
+
+/* BUTTON STYLES */
+
+.btn {
+  display: inline-block;
+  background-color: white;
+  padding: 0.5em 0.5em;
+  border-radius: 25px;
+  text-align: center;
+  width: auto;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn-1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-3 {
+  color: hsl(179, 100%, 13%);
+}
+
+/* CARD STYLES */
+
+.container {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 250px;
+  min-height: 400px;
+  padding: 2em;
+}
+
+.card-1 {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card-3 {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-family: "Big Shoulder", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 1em 0;
+}
+
+.card-body {
+  margin-bottom: 4em;
+  width: 170px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .card-1 {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card-3 {
+    border-radius: 0 0 10px 10px;
+  }
+}
