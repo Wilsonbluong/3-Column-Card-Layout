@@ -93,7 +93,7 @@ image {
   flex-direction: column;
   justify-content: space-evenly;
   width: 250px;
-  min-height: 400px;
+  min-height: 200px;
   padding: 2em;
 }
 
